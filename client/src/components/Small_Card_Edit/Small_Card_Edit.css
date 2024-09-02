@@ -1,0 +1,111 @@
+.small_card{
+    border: 0.1px solid rgb(189, 189, 189);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0,0,0, 0.75);
+    transition: tranform 200ms ease-in;
+    cursor: pointer;
+    max-width: 200px; 
+    max-height: 200px; 
+}
+
+
+.small_card_delete{
+    background-color: rgb(253, 254, 254);
+    z-index: 20;
+    border: 0.1px solid rgb(189, 189, 189);
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px -9px rgba(0,0,0, 0.75);
+    transition: tranform 200ms ease-in;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 90px;
+    min-width: 40px; 
+    min-height: 40px; 
+    max-width: 300px; 
+    padding: 5px;
+    max-height: 300px; 
+}
+
+
+
+.small_card_delete:hover{
+    transform: scale(1.07);
+}
+
+/* .small_card:hover{
+    transform: scale(1.07);
+} */
+
+.small_card > img{ 
+    border-radius: 45px;
+    justify-content: center;
+    margin-left: 25%;
+    object-fit: fill;   
+    max-width: 50%;
+    max-height: 100%;
+    
+}
+.small_card__info {
+    text-align: center;
+    margin-top: -9px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 1;
+}
+.small_card__info > h2{
+  font-size: 17px;
+  font-weight: 600;
+}
+.small_card__info > h3{
+    font-size: 0px;
+    font-weight: 300;
+    margin-top: 8px; 
+    margin-bottom: 8px;
+  }
+
+  @media only screen and (min-width : 150px) and (max-width : 780px)
+  {
+    .small_card_delete{
+        background-color: rgb(253, 254, 254);
+        z-index: 20;
+        border: 0.1px solid rgb(189, 189, 189);
+        border-radius: 12px;
+        box-shadow: 0px 6px 18px -9px rgba(0,0,0, 0.75);
+        transition: tranform 200ms ease-in;
+        position: absolute;
+        margin-top: -30px;
+        margin-left:0px;
+        min-width: 35px; 
+        min-height: 35px; 
+        max-width: 300px; 
+        padding: 5px;
+        max-height: 300px; 
+    }
+    
+    
+    .small_card{
+        border: 0.1px solid rgb(189, 189, 189);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 6px 18px -9px rgba(0,0,0, 0.75);
+        transition: tranform 200ms ease-in;
+        cursor: pointer;
+        max-width:100%; 
+        max-height:100%;
+    }
+    .small_card > img{ 
+        display: none;
+        
+    }
+    .small_card__info {
+        text-align: center;
+        margin-top: -9px;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 20px;
+        border: 1;
+    }
+
+  }

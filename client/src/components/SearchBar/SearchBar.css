@@ -1,0 +1,119 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.flex-form button {
+  background-color: #FF385C;
+  height: 80px;
+  width: 125px;
+  z-index: 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex: 1 1 auto;
+  text-align: center;
+  text-transform: default;
+  transition: 0.5s;
+  background: linear-gradient(90deg, var(--c1, #ed4967), var(--c2, #FF385C) 51%, var(--c1, #FF385C)) var(--x, 0)/ 200%;
+  box-shadow: 0 0 12px #eee;
+
+}
+
+.flex-form button:hover {
+  background: linear-gradient(90deg, var(--c1, #FF385C), var(--c2, #ed4967) 51%, var(--c1, #FF385C)) var(--x, 0)/ 200%;
+  background-repeat:no-repeat;
+  background-size: 200% 100%; 
+  transition:background-size 1s, background-color 1s;
+
+}
+
+.flex-form button :active {background-color:#2980b9; transition:background-size 0}
+
+.flex-form>* {
+  box-shadow: 0 0 22px #eee;
+  border: 0;
+  padding: 10px;
+  background: white;
+  line-height: 40px;
+  font-size: 19px;
+  width:195px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  outline: 0;
+  border-right: 1px solid rgba(209, 209, 209, 0.2);
+  -webkit-appearance: none;
+}
+
+.flex-form>*:last-child {
+  font-family:Arial, Helvetica, sans-serif ;
+  font-weight: 600;
+  font-size: 20px;
+  border-right: 0;
+  border-bottom-right-radius: 20px;
+  width:145px;
+  border-top-right-radius: 20px;
+}
+
+.searchField {
+  flex-basis: 350px;
+  z-index: 0;
+  width:200px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.flex-form>p {
+  color: black;
+
+}
+
+/*Flexbox Starts Here*/
+
+.cover {
+  width: 50%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.flex-form {
+  display: flex;
+  z-index: 5;
+  border-radius: 15px;
+}
+
+
+
+
+@media only screen and (min-width : 150px) and (max-width : 780px) {
+  /* .flex-form {
+    width: 120%;
+    
+  } */
+  /* .searchField {
+    flex-basis: 45px;
+    z-index: 0;
+    width: 105px;
+  }
+
+  .flex-form button {
+    height: 80px;
+  } */
+}
+
+@media only screen and (min-width : 250px) and (max-width : 880px) {
+
+.searchField {
+  flex-basis: 370px;
+  z-index: 0;
+  width:80%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.flex-form {
+  width: 140%;}
+
+}

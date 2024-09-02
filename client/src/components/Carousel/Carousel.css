@@ -1,0 +1,204 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --shadow: 0 3px 24px 3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  align-items: center;
+  overflow-x: hidden;
+
+}
+
+
+.load {
+  margin-top: -300px;
+}
+
+.flex-container {
+  margin: auto;
+  margin-left: 10%;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  width: 75%;
+  justify-content: space-between;
+  /* could also try with space-around */
+}
+
+.flex-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: calc(100% - 20px);
+  /* for demonstration purposes, subtracts top and bottom margin from height */
+  margin: 10px;
+  /* for demonstration purposes */
+}
+
+.tel {
+  color: black;
+  text-decoration: none;
+}
+
+.product_form {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  border-radius: 30px;
+  margin-left: 65%;
+  margin-right: 8%;
+  position: relative;
+  overflow: revert;
+  box-shadow: var(--shadow);
+}
+
+.title_form {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 130px;
+}
+
+.product_carousel {
+
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 700px;
+  border-radius: 30px;
+  margin: 10%;
+  margin-top: -700px;
+  margin-bottom: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+
+/* .carouselContainer {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 305px;
+    margin-top: -150px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  } */
+
+.photos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* style for the buttons */
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+
+.user_info_phone {
+  display: none;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+  cursor: grab;
+}
+
+.btn>span {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin-top: 25%;
+}
+
+@media only screen and (min-width : 150px) and (max-width : 780px) {
+  .product_form {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    width: 600px;
+    height: 530px;
+    border-radius: 30px;
+    margin: 9%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  .product_carousel {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    border-radius: 30px;
+    margin: 9%;
+    margin-top: 50px;
+    margin-bottom: auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  .flex-container {
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    margin-left: 10%;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+    /* could also try with space-around */
+  }
+
+  .flex-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: calc(100% - 20px);
+    /* for demonstration purposes, subtracts top and bottom margin from height */
+    margin: 5px;
+    /* for demonstration purposes */
+  }
+
+  .user_info {
+    display: none;
+
+  }
+
+  .user_info_phone {
+    display: block;
+  }
+
+}

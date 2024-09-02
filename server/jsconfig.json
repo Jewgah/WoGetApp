@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "paths": {
+        "@secrets": ["./utils/secrets"]
+      }
+    },
+    "exclude": ["node_modules", "dist"],
+    "include": ["./src/*.js", "src/**/*.js","**/*.js"],
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "importHelpers": true,
+    "removeComments": true,
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "strict": true,
+    "incremental": true,
+    "sourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+}
